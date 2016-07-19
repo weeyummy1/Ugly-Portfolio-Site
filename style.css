@@ -1,0 +1,138 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.darkText {
+    color: #0d0d0d;
+    font-weight: bold;
+}
+
+.lightText {
+    color: #cccccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #666666;
+}
+
+.current {
+    color: #666666;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    padding-top: 3em;
+    left: 7%;
+    right: 7%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+#logo {
+    float: left;
+    display: inline-block;
+    padding-left: 1.5%;
+    font-family: Impact;
+    font-size: 2.3em;
+}
+
+#nav {
+    float: right;
+}
+
+#nav > ul {
+    list-style: none;
+}
+
+#nav > ul > li {
+    padding: 0 25px;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+hr {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+#projects {
+    position: relative;
+    top: 8em;
+    margin: 0 9%;
+}
+
+.tile {
+    position: relative;
+    height: 25em;
+}
+
+.left {
+    width: calc(50% - 3px);
+    float: left;
+}
+
+.right {
+    margin-left: calc(50% + 3px);
+    margin-top: 6px;
+}
+
+.t1 {
+    width: calc(33% - 3px);
+    float: left;
+}
+
+.t2 {
+    margin-left: calc(33% + 3px);
+    width: calc(33% - 3px);
+    margin-top: 6px;
+}
+
+.t3 {
+    margin-left: calc(66% + 3px);
+    width: calc(33% - 3px);
+    margin-top: 6px;
+}
+
+.row img,
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.overlay {
+    background: black;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay span {
+    color: #cccccc;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 1.4em;
+}
+
+.left:hover .overlay,
+.right:hover .overlay {
+    opacity: .8;
+}
